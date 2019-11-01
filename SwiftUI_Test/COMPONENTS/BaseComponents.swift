@@ -30,14 +30,11 @@ struct CustomCellOne : View {
 }
 
 /// CustomCellTwo
-struct CustomCellTwo : View {
-    
+struct CustomCellTwo : View {    
     var user: PeopleModelElement
-    
     init(user: PeopleModelElement) {
         self.user = user
     }
-    
     var body: some View {
         return GeometryReader { geometry in
             VStack() {

@@ -128,6 +128,10 @@
 			isa = PBXGroup;
 			children = (
 				B48150ED236C2C6700CA08F2 /* CustomTableView.swift */,
+				B48150FF236C87BD00CA08F2 /* TableViewPresenter.swift */,
+				B4815110236C978A00CA08F2 /* TableViewInteractor.swift */,
+				B4815101236C88CE00CA08F2 /* TableViewWireframe.swift */,
+				B48150FD236C863D00CA08F2 /* TableViewAssembly.swift */,
 			);
 			path = TABLE_VIEW;
 			sourceTree = "<group>";
@@ -156,10 +160,6 @@
 				B48150FB236C81A100CA08F2 /* AppAssembly.swift */,
 				B481510E236C961400CA08F2 /* GenericProvider.swift */,
 				B4815112236C980100CA08F2 /* BaseProvider.swift */,
-				B48150FD236C863D00CA08F2 /* TableViewAssembly.swift */,
-				B48150FF236C87BD00CA08F2 /* TableViewPresenter.swift */,
-				B4815101236C88CE00CA08F2 /* TableViewWireframe.swift */,
-				B4815110236C978A00CA08F2 /* TableViewInteractor.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
