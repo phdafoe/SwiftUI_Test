@@ -157,9 +157,7 @@
 			children = (
 				B4815103236C895000CA08F2 /* GENERIC_CLASS */,
 				B48150F9236C80F100CA08F2 /* Constants.swift */,
-				B48150FB236C81A100CA08F2 /* AppAssembly.swift */,
-				B481510E236C961400CA08F2 /* GenericProvider.swift */,
-				B4815112236C980100CA08F2 /* BaseProvider.swift */,
+				B4815114236CCE2F00CA08F2 /* PROVIDER */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -172,6 +170,16 @@
 				B4815108236C8B2E00CA08F2 /* Interactor.swift */,
 			);
 			path = GENERIC_CLASS;
+			sourceTree = "<group>";
+		};
+		B4815114236CCE2F00CA08F2 /* PROVIDER */ = {
+			isa = PBXGroup;
+			children = (
+				B48150FB236C81A100CA08F2 /* AppAssembly.swift */,
+				B481510E236C961400CA08F2 /* GenericProvider.swift */,
+				B4815112236C980100CA08F2 /* BaseProvider.swift */,
+			);
+			path = PROVIDER;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

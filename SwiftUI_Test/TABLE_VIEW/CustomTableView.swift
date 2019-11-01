@@ -21,8 +21,10 @@ struct CustomTableView : View{
     var body: some View{
         
         VStack() {
-            List(presenter.users) { user in
-                CustomCellTwo(user: user).frame(height:100)
+            LoadingView(isShowing: .constant(false)) {
+                List(self.presenter.users) { user in
+                    CustomCellTwo(user: user).frame(height:100)
+                }.navigationBarTitle(Text("Contacts"), displayMode: .large)
             }
             Button(action: {
                 print("Fetching...")
@@ -35,7 +37,7 @@ struct CustomTableView : View{
                         .cornerRadius(10)
                     Text("Fetch").foregroundColor(Color.white)
                 }
-            }).scaleEffect(animationState ? 1 : 1.2)
+            }).scaleEffect(self.animationState ? 1 : 1.2)
                 .animation(Animation.easeInOut(duration: 2).repeatForever()).onAppear {
                     self.animationState.toggle()
             }
@@ -44,9 +46,5 @@ struct CustomTableView : View{
     }
 }
 
-struct BoolSelect: Identifiable {
-    var id = UUID()
-    var isSelected: Bool
-}
 
 

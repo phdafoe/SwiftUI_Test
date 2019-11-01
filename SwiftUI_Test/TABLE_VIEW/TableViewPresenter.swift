@@ -8,8 +8,8 @@
 
 import Foundation
 
-protocol TableViewPresenter {
-    func getDataFromWeb()
+protocol TableViewPresenter: class {
+    //
 }
 
 
